@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Stream</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>Music Stream</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-search"></i> Search</li>
+                <li><i class="fas fa-book"></i> Library</li>
+                <li><i class="fas fa-plus-square"></i> Create Playlist</li>
+                <li><i class="fas fa-heart"></i> Liked Songs</li>
+            </ul>
+            <div class="playlists">
+                <h3>PLAYLISTS</h3>
+                <ul>
+                    <li>My Playlist #1</li>
+                    <li>Workout Mix</li>
+                    <li>Chill Vibes</li>
+                    <li>Party Songs</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="user-nav">
+                    <div class="nav-buttons">
+                        <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="user-menu">
+                        <button class="upgrade-btn">Upgrade</button>
+                        <div class="profile-btn">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Featured Content -->
+            <section class="featured">
+                <h1>Good Evening</h1>
+                <div class="featured-grid">
+                    <!-- Featured playlists will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Recently Played -->
+            <section class="recently-played">
+                <h2>Recently Played</h2>
+                <div class="album-grid">
+                    <!-- Recently played albums will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Made For You -->
+            <section class="made-for-you">
+                <h2>Made For You</h2>
+                <div class="album-grid">
+                    <!-- Recommended albums will be populated by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Music Player -->
+        <div class="music-player">
+            <div class="now-playing">
+                <img src="wd1.jpg" alt="Album Cover" class="current-album-art">
+                <div class="track-info">
+                    <div class="track-name">Track Name</div>
+                    <div class="artist-name">Artist Name</div>
+                </div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="shuffle-btn"><i class="fas fa-random"></i></button>
+                    <button class="prev-btn"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <button class="next-btn"><i class="fas fa-step-forward"></i></button>
+                    <button class="repeat-btn"><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="progress-bar">
+                    <span class="current-time">0:00</span>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="total-time">3:30</span>
+                </div>
+            </div>
+
+            <div class="volume-controls">
+                <button class="volume-btn"><i class="fas fa-volume-up"></i></button>
+                <div class="volume-slider">
+                    <div class="volume-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscription Modal -->
+    <div class="modal" id="subscriptionModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Choose Your Plan</h2>
+            <div class="subscription-plans">
+                <div class="plan">
+                    <h3>Free</h3>
+                    <p class="price">$0/month</p>
+                    <ul>
+                        <li>Ad-supported</li>
+                        <li>Basic audio quality</li>
+                        <li>Limited skips</li>
+                    </ul>
+                    <button class="plan-btn">Current Plan</button>
+                </div>
+                <div class="plan premium">
+                    <h3>Premium</h3>
+                    <p class="price">$9.99/month</p>
+                    <ul>
+                        <li>Ad-free music</li>
+                        <li>High-quality audio</li>
+                        <li>Unlimited skips</li>
+                        <li>Offline listening</li>
+                    </ul>
+                    <button class="plan-btn">Upgrade Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
